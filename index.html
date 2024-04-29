@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibility Tools Comparison</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  header, footer { background-color: #f8f9fa; padding: 10px 0; }
+  nav a { margin: 0 10px; text-decoration: none; color: #007bff; }
+  footer a { text-decoration: none; color: #343a40; }
+  footer { text-align: center; }
+  .container { width: 90%; margin: auto; }
+  h1 { text-align: center; }
+  .tool-logo { width: 50px; height: auto; }
+  .check-btn { display: block; margin: 20px auto; padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  table { width: 100%; margin-top: 20px; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px; border: 1px solid #ddd; }
+  th { background-color: #007bff; color: white; }
+  .compare-btn { padding: 5px 10px; background-color: #ffc107; border: none; border-radius: 3px; cursor: pointer; }
+</style>
+<script>
+// JavaScript will go here
+</script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a href="#browser-extensions">Browser Extensions</a>
+      <a href="#standalone">Stand-alone API/Testing</a>
+      <a href="#subscription">Engine Subscription API</a>
+      <a href="#aim-report">AIM Report</a>
+      <a href="#help">Help</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Compare Accessibility Tools</h1>
+
+  <section>
+    <input type="text" id="website-url" placeholder="Enter website URL">
+    <button class="check-btn" id="check-btn">Check it</button>
+  </section>
+
+  <section>
+    <h2>List of Accessibility Testing Tools</h2>
+    <!-- Dummy logos - Replace src with your actual image paths -->
+    <img src="dummy-logo.png" alt="WAVE logo" class="tool-logo">
+    <img src="dummy-logo.png" alt="AChecker logo" class="tool-logo">
+    <img src="dummy-logo.png" alt="Lighthouse logo" class="tool-logo">
+  </section>
+
+  <section>
+    <table>
+      <tr>
+        <th>Accessibility Check</th>
+        <th>Accessibility Tool 1</th>
+        <th>Accessibility Tool 2</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Example Check</td>
+        <td>3 Issues</td>
+        <td>5 Issues</td>
+        <td><button class="compare-btn">Compare</button></td>
+      </tr>
+      <!-- Additional rows as needed -->
+    </table>
+  </section>
+</main>
+
+<footer>
+  <a href="https://www.unt.edu/index.html">UNT</a> | 
+  <a href="#contact">Contact Us</a> | 
+  <a href="#about">About</a> | 
+  <a href="#terms">Terms of Use</a>
+</footer>
+
+<script>
+  // Script to handle "Check it" button click will go here
+  document.getElementById('check-btn').onclick = function() {
+    // Implement functionality to check the accessibility of the provided URL
+  };
+</script>
+
+</body>
+</html>
